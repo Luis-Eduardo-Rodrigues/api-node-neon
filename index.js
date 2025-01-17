@@ -2,7 +2,9 @@ const express = require("express");
 const { query } = require("./conexao");
 
 const app = express();
+
 app.use(express.json());
+app.use(cors());
 
 app.get("/", async (req, res) => {
   try {
