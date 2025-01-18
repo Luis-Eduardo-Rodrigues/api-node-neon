@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-  origin: 'http://http://localhost:5173/', 
+  origin: ["http://http://localhost:5173/", "http://localhost:5173/cadastrar"], 
   methods: ['GET', 'POST'], 
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
